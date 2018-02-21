@@ -34,23 +34,24 @@
   import FullPage from './components/FullPage.vue'
   import fullPageMixin from './fullPageMixin'
 
-export default {
-  name: 'app',
-  mixins: [fullPageMixin],
-  components: {
-    FullPage
-  },
-  data() {
-    return {
-      options: {
-        scrollBar: false,
-        menu: '#menu',
-        navigation: true,
-        anchors: ['week-1', 'week-2', 'week-3']
-      },
+  export default {
+    name: 'app',
+    mixins: [fullPageMixin],
+    components: {
+      FullPage
+    },
+    data() {
+      return {
+        options: {
+          scrollBar: false,
+          menu: '#menu',
+          navigation: true,
+          anchors: ['week-1', 'week-2', 'week-3'],
+          sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
+        }
+      }
     }
-  },
-}
+  }
 </script>
 
 <style>
